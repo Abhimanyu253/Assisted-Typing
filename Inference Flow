@@ -1,0 +1,13 @@
+title Inference Flow
+
+Query --> Tokens: tokenization
+#note right of Bob: Bob thinks about it
+Tokens->Encoder: Embedding
+
+Encoder -> Decoder: encoder_output, hidden states
+Decoder -> Output: Decoder output
+
+
+loop
+    Decoder->Output: till it predicts the terminating word
+end
